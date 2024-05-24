@@ -1,7 +1,7 @@
 // 7. Devuelve un listado con los distintos estados por los que puede pasar un pedido. 
 
 export const requestStatuses = async() => {
-    let res = await fetch("http://172.16.101.146:5518/requests")
+    let res = await fetch("http://172.16.101.146:5690/requests")
     let data = await res.json();
     let dataUpdate = []
 
@@ -18,7 +18,7 @@ export const requestStatuses = async() => {
 //9.Devuelve un listado con el código de pedido, código de cliente, fecha esperada y fecha de entrega de los pedidos que no han sido entregados a tiempo.
 
 export const getAllCodeRequestCodeClientDateRequestDateWait = async () => {
-    let res = await fetch("http://172.16.101.146:5518/requests");
+    let res = await fetch("http://172.16.101.146:5690/requests");
     let data = await res.json();
     let overdueRequests = [];
 
@@ -47,7 +47,7 @@ export const getAllCodeRequestCodeClientDateRequestDateWait = async () => {
 
 //10.Devuelve un listado con el código de pedido, código de cliente, fecha esperada y fecha de entrega de los pedidos cuya fecha de entrega ha sido al menos dos días antes de la fecha esperada.
 export const getOverdueRequests = async () => {
-    let res = await fetch("http://172.16.101.146:5518/requests");
+    let res = await fetch("http://172.16.101.146:5690/requests");
     let data = await res.json();
     let overdueRequests = [];
 
@@ -74,7 +74,7 @@ export const getOverdueRequests = async () => {
 
 //11. Devuelve un listado de todos los pedidos que fueron rechazados en 2009
 export const getAllRejectedOrdersIn2009 = async () => {
-    let res = await fetch("http://172.16.101.146:5518/requests")
+    let res = await fetch("http://172.16.101.146:5690/requests")
     let data = await res.json();
     let rejectsorder = []
 
@@ -92,7 +92,7 @@ export const getAllRejectedOrdersIn2009 = async () => {
 //12.Devuelve un listado de todos los pedidos que han sido entregados en el mes de enero de cualquier ano
 export const getAllDeliveredOrderInJanuary = async () => {
     console.log("djksjdk")
-    let res = await fetch("http://172.16.101.146:5518/requests")
+    let res = await fetch("http://172.16.101.146:5690/requests")
     let data = await res.json();
     let DeliveredJanuary = []
 
@@ -105,7 +105,7 @@ export const getAllDeliveredOrderInJanuary = async () => {
 }
 
 export const getAllClientsWhoRequest = async(code)=>{
-    let res = await fetch(`http://172.16.101.146:5518/requests?code_client=${code}`)
+    let res = await fetch(`http://172.16.101.146:5690/requests?code_client=${code}`)
     let data =await res.json();
     return data;
 }

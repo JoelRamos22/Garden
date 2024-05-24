@@ -1,20 +1,15 @@
 import {
-     getAll,
-     getAllClientsAndSalesManagers ,
-     getAllClientsAndSalesManagerNameAndIfThereIsPayments,
-     getAllClientsWithoutPaymentsAndSalesManagerName,
-     getAllClientsAndSalesManagerNameAndIfThereIsPaymentsAndCity,
-     getAllClientsAndSalesManagerNameAndIfThereWhoDontPaymentAndCity,
-     getClientsWithDelayedOrders,
-     getAllclientsNotPayments,
-     getAllClientsWhoHaveRequestedButHaventPaid,
-     getAllSpanishClients,
-     getAllClientsInFuenlabrada,
-     
-     
- 
-
-    }
+    getAll,
+    getAllClientsAndSalesManagers ,
+    getAllClientsAndSalesManagerNameAndIfThereIsPayments,
+    getAllClientsWithoutPaymentsAndSalesManagerName,
+    getAllClientsAndSalesManagerNameAndIfThereIsPaymentsAndCity,
+    getAllClientsAndSalesManagerNameAndIfThereWhoDontPaymentAndCity,
+    getClientsWithDelayedOrders,
+    getAllclientsNotPayments,
+    getAllClientsWhoHaveRequestedButHaventPaid,
+    getAllSpanishClients,
+    getAllClientsInFuenlabrada,    }
       from "./module/clients.js";
 import {
   AllDirectionsWithClientsInFuenlabrada,
